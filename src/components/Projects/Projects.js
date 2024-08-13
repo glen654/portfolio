@@ -6,16 +6,16 @@ import { projects } from '../../constants/constants';
 
 const projectsDemo = [{
   title: 'Project 1',
-  description: 'This is a really long project about this project'
+  description: 'This is a really long project about this project.'
 },{
   title: 'Project 2',
-  description: 'This is a really long project about this project
+  description: 'This is a really long project about this project.'
 },{
   title: 'Project 3',
-  description: 'This is a really long project about this project
+  description: 'This is a really long project about this project.'
 },{
   title: 'Project 4',
-  description: 'This is a really long project about this project
+  description: 'This is a really long project about this project.'
 }];
 
 const Projects = () => (
@@ -23,9 +23,11 @@ const Projects = () => (
       <SectionDivider/>
       <SectionTitle main>Projects</SectionTitle>
       <GridContainer>
-        {[0, 1, 2, 3, 4, 5].map((project => {
+        {projectsDemo.map((project => {
           <div>
-            {project}
+            {project.title}
+            <br />
+            {project.description}
           </div>
         }))}
       </GridContainer>
