@@ -3,13 +3,13 @@ import React from 'react';
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
 import { DiCssdeck } from 'react-icons/di';
 
-import { Container, Div1, Div2, Div3, NavLink, SocialIcons } from './HeaderStyles';
+import { Container, Div1, Div2, Div3, NavLink, SocialIcons, Span } from './HeaderStyles';
 
 const Header = () =>  (
   <Container>
     <Div1>
         <Link href="/" style={{display: "flex", alignItems: "center", color:"white"}}>
-          <DiCssdeck size="3rem"/> <span>Glen Alloy</span>
+          <DiCssdeck size="3rem"/> <Span>Glen Alloy</Span>
         </Link>
     </Div1>
     <Div2>
